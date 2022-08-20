@@ -1,0 +1,24 @@
+.search-queries {
+  padding: 0 3rem 3rem;
+  list-style-type: none;
+  columns: 4;
+}
+
+.query-item {
+  font-size: 1.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  &__link {
+    box-shadow: inset 0 0 0 0 $color-primary;
+    color: $color-grey-dark-1;
+    margin: 0 -0.25rem;
+    padding: 0.5rem;
+    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      box-shadow: inset 150px 0 0 0 $color-grad-2;
+      color: $color-grey-light-1;
+    }
+  }
+}
